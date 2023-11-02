@@ -1,0 +1,37 @@
+[
+    {
+      "model": "snowflake_drf.technology",
+      "pk": 1,
+      "fields": {
+        "technology_name": "DJANGO"
+      }
+    },
+    {
+      "model": "snowflake_drf.technology",
+      "pk": 2,
+      "fields": {
+        "technology_name": "PYTHON"
+      }
+    },
+    {
+      "model": "snowflake_drf.technology",
+      "pk": 3,
+      "fields": {
+        "technology_name": "CRISPR"
+      }
+    },
+    {
+      "model": "snowflake_drf.technology",
+      "pk": 4,
+      "fields": {
+        "technology_name": "Ruby"
+      }
+    },
+    {
+      "model": "snowflake_drf.technology",
+      "pk": 5,
+      "fields": {
+        "technology_name": "GPT2"
+      }
+    }
+  ]

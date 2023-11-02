@@ -1,0 +1,38 @@
+[
+    {
+      "model": "snowflake_drf.planthistoricaldata",
+      "pk": 1,
+      "fields": {
+        "timestamp": "2022-12-07 20:36:59.745833+00:00",
+        "isDST": 0,
+        "plant": "PLANT1"
+      }
+    },
+    {
+      "model": "snowflake_drf.planthistoricaldata",
+      "pk": 2,
+      "fields": {
+        "timestamp": "2022-12-07 20:36:59.745833+06:00",
+        "isDST": 0,
+        "plant": "PLANT1"
+      }
+    },
+    {
+      "model": "snowflake_drf.planthistoricaldata",
+      "pk": 3,
+      "fields": {
+        "timestamp": "2022-12-07 20:36:59.745833+08:00",
+        "isDST": 0,
+        "plant": "PLANT2"
+      }
+    },
+    {
+      "model": "snowflake_drf.planthistoricaldata",
+      "pk": 4,
+      "fields": {
+        "timestamp": "2022-12-07 20:36:59.745833+00:00",
+        "isDST": 1,
+        "plant": "PLANT2"
+      }
+    }
+  ]

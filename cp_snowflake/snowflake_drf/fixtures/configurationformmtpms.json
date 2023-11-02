@@ -1,0 +1,13 @@
+[
+    {
+      "model": "snowflake_drf.configurationformmtpm",
+      "pk": 1,
+      "fields": {
+        "mtpm_name": "MTPM_NAME",
+        "uom_metric": "CM",
+        "uom_imperial": "IN",
+        "element_path": "PLANTPATH1\\_Reporting\\PYTHON\\KPI\\MTPM_NAME",
+        "plant_technology_id": "PLANT1PYTHON"
+      }
+    }
+]

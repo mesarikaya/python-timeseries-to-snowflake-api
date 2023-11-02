@@ -1,0 +1,47 @@
+[
+    {
+      "model": "snowflake_drf.planttechnology",
+      "fields": {
+        "plant_technology_id": "PLANT1PYTHON",
+        "plant_technology_path": "THING",
+        "plant_id": "PLANT1",
+        "technology_id": 2
+      }
+    },
+    {
+      "model": "snowflake_drf.planttechnology",
+      "fields": {
+        "plant_technology_id": "PLANT2DJANGO",
+        "plant_technology_path": "THING2",
+        "plant_id": "PLANT1",
+        "technology_id": 1
+      }
+    },
+    {
+      "model": "snowflake_drf.planttechnology",
+      "fields": {
+        "plant_technology_id": "PLANT1CRISPR",
+        "plant_technology_path": "THING3",
+        "plant_id": "PLANT2",
+        "technology_id": 3
+      }
+    },
+    {
+      "model": "snowflake_drf.planttechnology",
+      "fields": {
+        "plant_technology_id": "PLANT2RUBY",
+        "plant_technology_path": "THING4",
+        "plant_id": "PLANT2",
+        "technology_id": 4
+      }
+    },
+    {
+      "model": "snowflake_drf.planttechnology",
+      "fields": {
+        "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+        "plant_technology_path": "THING4",
+        "plant_id": "PLANT3",
+        "technology_id": 5
+      }
+    }
+  ]

@@ -1,0 +1,38 @@
+[
+    {
+      "model": "snowflake_drf.plant",
+      "pk": "PLANT1",
+      "fields": {
+        "plant_name": "PLANT ONE",
+        "plant_path": "PLANTPATH1",
+        "reporting_day_start": 15,
+        "timezone": "America/Chicago",
+        "utc_offset": 6.0,
+        "region": 1
+      }
+    },
+    {
+      "model": "snowflake_drf.plant",
+      "pk": "PLANT2",
+      "fields": {
+        "plant_name": "PLANT TWO",
+        "plant_path": "PLANTPATH2",
+        "reporting_day_start": 1,
+        "timezone": "America/Chicago",
+        "utc_offset": 8.0,
+        "region": 1
+      }
+    },
+    {
+      "model": "snowflake_drf.plant",
+      "pk": "PLANT3",
+      "fields": {
+        "plant_name": "PLANT THREE - EMEA",
+        "plant_path": "PLANTPATH3",
+        "reporting_day_start": 11,
+        "timezone": "Europe/Amsterdam",
+        "utc_offset": 0.0,
+        "region": 2
+      }
+    }
+  ]

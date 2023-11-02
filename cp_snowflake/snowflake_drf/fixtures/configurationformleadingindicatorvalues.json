@@ -1,0 +1,21 @@
+[
+    {
+      "model": "snowflake_drf.configurationformleadingindicatorvalue",
+      "pk": 1,
+      "fields": {
+        "display_name": "PPM",
+        "min": 1.0,
+        "max": 500.5,
+        "display_low": 1.0,
+        "display_high": 500.5,
+        "corrective_action": "decontaminate",
+        "cmo_link": "https://google.com",
+        "configuration_form_leading_indicator": 1,
+        "plant_technology": "PLANT2RUBY",
+        "datetime_created": "2022-12-07 20:36:59.745833+06:00",
+        "datetime_updated": "2022-12-07 20:36:59.745833+06:00",
+        "user_created": "elena",
+        "user_updated": "elena"
+      }
+    }
+]

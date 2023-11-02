@@ -1,0 +1,3 @@
+"plant_id","plant_name","reporting_day_start","timezone","utc_offset","region","plant_path"
+"e7b4fb0f-4a3b-11ed-b700-1cc10cb4aa68","Fort Dodge","6","America/Chicago","-6","NA","\\MSUSAMEACP3307.na.corp.cargill.com\CSST PDDF MTPM\Fort Dodge"
+"8304d559-4a3b-11ed-b700-1cc10cb4aa68","Bergen op Zoom","6","Europe/Amsterdam","1","EMEA","\\MSUSAMEACP3307.na.corp.cargill.com\CSST PDDF MTPM\Bergen op Zoom"

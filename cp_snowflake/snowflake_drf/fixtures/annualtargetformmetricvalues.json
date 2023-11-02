@@ -1,0 +1,36 @@
+[
+  {
+    "model": "snowflake_drf.annualtargetformmetricvalue",
+    "pk": 1,
+    "fields": {
+      "value_timestamp_utc": "2022-12-07 20:36:59.745833+06:00",
+      "value_timestamp_local": "2022-12-07 20:36:59",
+      "last_fiscal_year": 917450.00912,
+      "budget": 915622.00,
+      "personal_best": 92333.90,
+      "configuration_form_mtpm": 1,
+      "plant_technology": "PLANT2RUBY",
+      "datetime_created": "2022-12-07 20:36:59.745833+06:00",
+      "datetime_updated": "2022-12-07 20:36:59.745833+06:00",
+      "user_created": "elena",
+      "user_updated": "elena"
+    }
+  },
+  {
+    "model": "snowflake_drf.annualtargetformmetricvalue",
+    "pk": 2,
+    "fields": {
+      "value_timestamp_utc": "2022-12-17 20:36:59.745833+06:00",
+      "value_timestamp_local": "2022-12-17 20:36:59",
+      "last_fiscal_year": 917450.00912,
+      "budget": 915622.00,
+      "personal_best": 92333.90,
+      "configuration_form_mtpm": 1,
+      "plant_technology": "PLANT2RUBY",
+      "datetime_created": "2022-12-17 20:36:59.745833+06:00",
+      "datetime_updated": "2022-12-17 20:36:59.745833+06:00",
+      "user_created": "elena",
+      "user_updated": "elena"
+    }
+  }
+]

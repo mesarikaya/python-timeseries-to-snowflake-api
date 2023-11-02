@@ -1,0 +1,13 @@
+[
+    {
+      "model": "snowflake_drf.configurationformleadingindicator",
+      "pk": 1,
+      "fields": {
+        "leading_indicator_name": "PPM",
+        "uom_metric": "CMPM",
+        "uom_imperial": "INPM",
+        "element_path": "PLANTPATH1\\_Reporting\\PYTHON\\KPI\\MTPM_NAME\\PPM",
+        "configuration_form_mtpm": 1
+      }
+    }
+]

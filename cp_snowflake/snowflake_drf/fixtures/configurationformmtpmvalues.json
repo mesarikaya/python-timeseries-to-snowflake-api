@@ -1,0 +1,19 @@
+[
+    {
+      "model": "snowflake_drf.configurationformmtpmvalue",
+      "pk": 1,
+      "fields": {
+        "display_name": "MTPM_NAME",
+        "min": 1.0,
+        "max": 99999,
+        "display_low": 1.0,
+        "display_high": 999.99,
+        "configuration_form_mtpm": 1,
+        "plant_technology": "PLANT1PYTHON",
+        "datetime_created": "2022-12-07 20:36:59.745833+06:00",
+        "datetime_updated": "2022-12-07 20:36:59.745833+06:00",
+        "user_created": "elena",
+        "user_updated": "elena"
+      }
+    }
+]

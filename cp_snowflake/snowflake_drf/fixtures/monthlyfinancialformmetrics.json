@@ -1,0 +1,36 @@
+[
+    {
+      "model": "snowflake_drf.monthlyfinancialformmetric",
+      "pk": 1,
+      "fields": {
+        "metric_name": "RUBYLEN",
+        "uom_metric": "CM",
+        "uom_imperial": "IN",
+        "technology": 4,
+        "is_numeric": true
+      }
+    },
+    {
+      "model": "snowflake_drf.monthlyfinancialformmetric",
+      "pk": 2,
+      "fields": {
+        "metric_name": "DJANGOLEN",
+        "uom_metric": "ZED",
+        "uom_imperial": "Z",
+        "technology": 1,
+        "is_numeric": true
+
+      }
+    },
+    {
+      "model": "snowflake_drf.monthlyfinancialformmetric",
+      "pk": 3,
+      "fields": {
+        "metric_name": "GPTLEN",
+        "uom_metric": "CHAR",
+        "uom_imperial": "WORD",
+        "technology": 5,
+        "is_numeric": false
+      }
+    }
+  ]

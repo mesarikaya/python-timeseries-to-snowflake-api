@@ -1,0 +1,69 @@
+---
+kind: kubernetes
+app: cockpitsnowflakeapi
+type: web
+internal: true
+team: dataservice
+docker_image: cockpit-snowflake-api
+replicas: 6 
+container_port: 8000
+auto_scaling:
+  max_replicas: 8
+  cpu_target_average_utilization: 80
+revisionHistoryLimit: 10
+healthcheck:
+  path: /healthcheck/
+dns:
+  zone: somecloud
+  name: cockpit-snowflake-api 
+database:
+  type: postgres # (Required) postgres 
+  read_replica: false # by default this is false
+cache:
+  type: redis
+
+envvars:
+  dev:
+    ENVIRONMENT: dev
+    ROLE_PREFIX: DEV_CSST_MDP_Cockpit_
+  stage:
+    ENVIRONMENT: stage
+    ROLE_PREFIX: STAGE_CSST_MDP_Cockpit_
+    
+secrets:
+  dev: 
+    cockpitsnowflakeapi:
+      version: latest
+  stage: 
+    cockpitsnowflakeapi:
+      version: latest
+#   prod: 
+#     cockpitsnowflakeapi:
+#       version: latest
+headers:
+  csp:
+    default:
+      script-src:
+        self: true
+        unsafe-inline: true
+        sources:
+          - cdn.jsdelivr.net
+      font-src:
+        self: true
+        sources:
+          - fonts.gstatic.com
+      img-src:
+        self: true
+        data: true
+        sources:
+          - cdn.jsdelivr.net
+          - cdn.redoc.ly
+      worker-src:
+        self: true
+        blob: true
+      style-src:
+        self: true
+        unsafe-inline: true
+        sources:
+          - cdn.jsdelivr.net
+          - fonts.googleapis.com

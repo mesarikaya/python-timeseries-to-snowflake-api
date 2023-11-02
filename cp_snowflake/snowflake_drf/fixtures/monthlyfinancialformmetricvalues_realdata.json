@@ -1,0 +1,488 @@
+[
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 1,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "1",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2023-05-01 13:00:00+00",
+            "value_timestamp_local": "2023-05-01 08:00:00+00",
+            "metric_value": "108689.3762",
+            "datetime_created": "2021-06-01 13:00:00+00",
+            "datetime_updated": "2021-06-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 2,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "2",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2023-05-01 13:00:00+00",
+            "value_timestamp_local": "2023-05-01 08:00:00+00",
+            "metric_value": "117944.7471",
+            "datetime_created": "2021-07-01 13:00:00+00",
+            "datetime_updated": "2021-07-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 3,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "3",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2023-05-01 13:00:00+00",
+            "value_timestamp_local": "2023-05-01 08:00:00+00",
+            "metric_value": "96248.90947",
+            "datetime_created": "2021-08-01 13:00:00+00",
+            "datetime_updated": "2021-08-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 4,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "4",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2023-05-01 13:00:00+00",
+            "value_timestamp_local": "2023-05-01 08:00:00+00",
+            "metric_value": "120042.3789",
+            "datetime_created": "2021-09-01 13:00:00+00",
+            "datetime_updated": "2021-09-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 5,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "5",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2023-05-03 13:00:00+00",
+            "value_timestamp_local": "2023-05-03 08:00:00+00",
+            "metric_value": "118744.5785",
+            "datetime_created": "2021-10-01 13:00:00+00",
+            "datetime_updated": "2021-10-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 6,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "6",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-11-01 13:00:00+00",
+            "value_timestamp_local": "2021-11-01 08:00:00+00",
+            "metric_value": "117654.9591",
+            "datetime_created": "2021-11-01 13:00:00+00",
+            "datetime_updated": "2021-11-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 7,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "7",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-12-01 14:00:00+00",
+            "value_timestamp_local": "2021-12-01 08:00:00+00",
+            "metric_value": "108372",
+            "datetime_created": "2021-12-01 14:00:00+00",
+            "datetime_updated": "2021-12-01 14:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 8,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "8",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-01-01 14:00:00+00",
+            "value_timestamp_local": "2022-01-01 08:00:00+00",
+            "metric_value": "103737",
+            "datetime_created": "2022-01-01 14:00:00+00",
+            "datetime_updated": "2022-01-01 14:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 9,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "9",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-02-01 14:00:00+00",
+            "value_timestamp_local": "2022-02-01 08:00:00+00",
+            "metric_value": "123",
+            "datetime_created": "2022-02-01 14:00:00+00",
+            "datetime_updated": "2023-03-02 19:18:42.163859+00",
+            "user_created": "l870757",
+            "user_updated": "a185615",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 10,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "10",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-03-01 14:00:00+00",
+            "value_timestamp_local": "2022-03-01 08:00:00+00",
+            "metric_value": "120165.8141",
+            "datetime_created": "2022-03-01 14:00:00+00",
+            "datetime_updated": "2022-03-01 14:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 11,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "11",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-04-01 13:00:00+00",
+            "value_timestamp_local": "2022-04-01 08:00:00+00",
+            "metric_value": "116554.19",
+            "datetime_created": "2022-04-01 13:00:00+00",
+            "datetime_updated": "2022-04-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 12,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "12",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-05-01 13:00:00+00",
+            "value_timestamp_local": "2022-05-01 08:00:00+00",
+            "metric_value": "116137.1237",
+            "datetime_created": "2022-05-01 13:00:00+00",
+            "datetime_updated": "2022-05-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 13,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "13",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-06-01 13:00:00+00",
+            "value_timestamp_local": "2022-06-01 08:00:00+00",
+            "metric_value": "110535.1668",
+            "datetime_created": "2022-06-01 13:00:00+00",
+            "datetime_updated": "2022-06-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 14,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "14",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-07-01 13:00:00+00",
+            "value_timestamp_local": "2022-07-01 08:00:00+00",
+            "metric_value": "114244.5212",
+            "datetime_created": "2022-07-01 13:00:00+00",
+            "datetime_updated": "2022-07-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 15,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "15",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-08-01 13:00:00+00",
+            "value_timestamp_local": "2022-08-01 08:00:00+00",
+            "metric_value": "96383.30035",
+            "datetime_created": "2022-08-01 13:00:00+00",
+            "datetime_updated": "2022-08-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 16,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "16",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-09-01 13:00:00+00",
+            "value_timestamp_local": "2022-09-01 08:00:00+00",
+            "metric_value": "110723.6339",
+            "datetime_created": "2022-09-01 13:00:00+00",
+            "datetime_updated": "2022-09-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170"
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 17,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "17",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-10-01 13:00:00+00",
+            "value_timestamp_local": "2022-10-01 08:00:00+00",
+            "metric_value": "987654321",
+            "datetime_created": "2022-10-01 13:00:00+00",
+            "datetime_updated": "2023-03-02 20:29:07.84596+00",
+            "user_created": "l870757",
+            "user_updated": "a185615",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 18,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "18",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-11-01 13:00:00+00",
+            "value_timestamp_local": "2022-11-01 08:00:00+00",
+            "metric_value": "112911.7699",
+            "datetime_created": "2022-11-01 13:00:00+00",
+            "datetime_updated": "2022-11-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 19,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "19",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2022-12-01 14:00:00+00",
+            "value_timestamp_local": "2022-12-01 08:00:00+00",
+            "metric_value": "95137.69306263",
+            "datetime_created": "2022-12-01 14:00:00+00",
+            "datetime_updated": "2023-05-16 23:50:05.29365+00",
+            "user_created": "l870757",
+            "user_updated": "c119609",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 20,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "20",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2023-01-01 14:00:00+00",
+            "value_timestamp_local": "2023-01-01 08:00:00+00",
+            "metric_value": "116773.50465053",
+            "datetime_created": "2023-01-01 14:00:00+00",
+            "datetime_updated": "2023-05-16 23:44:12.193494+00",
+            "user_created": "l870757",
+            "user_updated": "c119609",
+            "monthly_financial_form_metric_id": "1",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 21,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "21",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-06-01 13:00:00+00",
+            "value_timestamp_local": "2021-06-01 08:00:00+00",
+            "metric_value": "276.0961381",
+            "datetime_created": "2021-06-01 13:00:00+00",
+            "datetime_updated": "2021-06-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "2",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 22,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "22",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-07-01 13:00:00+00",
+            "value_timestamp_local": "2021-07-01 08:00:00+00",
+            "metric_value": "301.6845092",
+            "datetime_created": "2021-07-01 13:00:00+00",
+            "datetime_updated": "2021-07-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "2",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 23,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "23",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-08-01 13:00:00+00",
+            "value_timestamp_local": "2021-08-01 08:00:00+00",
+            "metric_value": "319.1612016",
+            "datetime_created": "2021-08-01 13:00:00+00",
+            "datetime_updated": "2021-08-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "2",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 24,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "24",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-09-01 13:00:00+00",
+            "value_timestamp_local": "2021-09-01 08:00:00+00",
+            "metric_value": "293.6252109",
+            "datetime_created": "2021-09-01 13:00:00+00",
+            "datetime_updated": "2021-09-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "2",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 25,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "25",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-10-01 13:00:00+00",
+            "value_timestamp_local": "2021-10-01 08:00:00+00",
+            "metric_value": "213.0916235",
+            "datetime_created": "2021-10-01 13:00:00+00",
+            "datetime_updated": "2021-10-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "2",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": null
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 26,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "26",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-11-01 13:00:00+00",
+            "value_timestamp_local": "2021-11-01 08:00:00+00",
+            "metric_value": null,
+            "datetime_created": "2021-10-01 13:00:00+00",
+            "datetime_updated": "2021-10-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "3",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": "Test Material"
+        }
+    },
+    {
+        "model": "snowflake_drf.monthlyfinancialformmetricvalue",
+        "pk": 27,
+        "fields": {
+            "monthly_financial_form_metric_value_id": "27",
+            "plant_technology_path": "\\\\MSUSAMEACP3323.na.corp.cargill.com\\CSST PDDF MTPM\\Fort Dodge\\_Reporting\\Corn Wet Mill",
+            "value_timestamp_utc": "2021-12-01 13:00:00+00",
+            "value_timestamp_local": "2021-12-01 08:00:00+00",
+            "metric_value": null,
+            "datetime_created": "2021-10-01 13:00:00+00",
+            "datetime_updated": "2021-10-01 13:00:00+00",
+            "user_created": "l870757",
+            "user_updated": "l870757",
+            "monthly_financial_form_metric_id": "3",
+            "plant_technology_id": "1bbc717f-df9a-11ed-b754-f4ee08e53170",
+            "metric_value_string": "Test Material 2"
+        }
+    }
+]

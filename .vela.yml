@@ -1,0 +1,218 @@
+version: '1'
+
+secrets:
+  - name: VERACODE_USER
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/VERACODE_USER
+    engine: native
+    type: repo
+  - name: VERACODE_PASS
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/VERACODE_PASS
+    engine: native
+    type: repo
+  - name: READ_USER_SSO_TEST
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/READ_USER_SSO_TEST
+    engine: native
+    type: repo
+  - name: READ_PWD_SSO_TEST
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/READ_PWD_SSO_TEST
+    engine: native
+    type: repo
+  - name: WRITE_USER_SSO_TEST
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/WRITE_USER_SSO_TEST
+    engine: native
+    type: repo
+  - name: WRITE_PWD_SSO_TEST
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/WRITE_PWD_SSO_TEST
+    engine: native
+    type: repo
+  - name: ADMIN_USER_SSO_TEST
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/ADMIN_USER_SSO_TEST
+    engine: native
+    type: repo
+  - name: ADMIN_PWD_SSO_TEST
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/ADMIN_PWD_SSO_TEST
+    engine: native
+    type: repo
+  - name: AUTHORIZED_AUDS
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/AUTHORIZED_AUDS
+    engine: native
+    type: repo
+  - name: RESOURCE_ID
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/RESOURCE_ID
+    engine: native
+    type: repo
+  - name: CLIENT_CREDENTIAL_ID
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/CLIENT_CREDENTIAL_ID
+    engine: native
+    type: repo
+  - name: CLIENT_CREDENTIAL_SECRET
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/CLIENT_CREDENTIAL_SECRET
+    engine: native
+    type: repo
+  - name: TENANT_ID
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/TENANT_ID
+    engine: native
+    type: repo
+  - name: CLIENT_ID
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/CLIENT_ID
+    engine: native
+    type: repo
+  - name: CLIENT_SECRET
+    key: CARGILL-SMART-MANUFACTURING/cockpit-snowflake-api/CLIENT_SECRET
+    engine: native
+    type: repo
+
+stages:
+  quality-and-scan:
+    steps:
+      - name: test
+        image: python:3.9
+        ruleset:
+          if:
+            branch: [development, stage, production, feature/*]
+            event: [push, pull_request]
+            status: [success]
+        secrets: [READ_USER_SSO_TEST, READ_PWD_SSO_TEST, WRITE_USER_SSO_TEST, WRITE_PWD_SSO_TEST, ADMIN_USER_SSO_TEST, ADMIN_PWD_SSO_TEST, AUTHORIZED_AUDS, RESOURCE_ID, CLIENT_CREDENTIAL_ID, CLIENT_CREDENTIAL_SECRET, TENANT_ID, CLIENT_ID, CLIENT_SECRET]
+        commands:
+          - apt-get update -y
+          - apt-get install -y libsasl2-dev
+          - apt-get install -y libsasl2-2
+          - apt-get install -y libsasl2-modules-gssapi-mit
+          - pip3 install -r requirements.txt
+          - cd cp_snowflake
+          - export TEST_ADMIN_SSO_USERNAME=${ADMIN_USER_SSO_TEST}
+          - export TEST_ADMIN_SSO_PASSWORD=${ADMIN_PWD_SSO_TEST}
+          - export TEST_WRITE_SSO_USERNAME=${WRITE_USER_SSO_TEST}
+          - export TEST_WRITE_SSO_PASSWORD=${WRITE_PWD_SSO_TEST}
+          - export TEST_READ_SSO_USERNAME=${READ_USER_SSO_TEST}
+          - export TEST_READ_SSO_PASSWORD=${READ_PWD_SSO_TEST}
+          - export AUTHORIZED_AUDS=${AUTHORIZED_AUDS}
+          - export RESOURCE_ID=${RESOURCE_ID}
+          - export CLIENT_CREDENTIAL_ID=${CLIENT_CREDENTIAL_ID}
+          - export CLIENT_CREDENTIAL_SECRET=${CLIENT_CREDENTIAL_SECRET}
+          - export TENANT_ID=${TENANT_ID}
+          - export CLIENT_ID=${CLIENT_ID}
+          - export CLIENT_SECRET=${CLIENT_SECRET}
+          - coverage run manage.py test --exclude-tag=integration
+          - coverage xml
+      - name: sonar_deployment_quality
+        image: docker-utilities.binrepo.cglcloud.in/enablementtools/sonarqube-plugin:1-stable
+        ruleset:
+          event: [ push, pull_request ]
+          branch: [ development, feature/* ]
+        parameters:
+          sources: 'cp_snowflake/snowflake_drf, cp_snowflake/snowflake_wrapper'
+          team: boscdataservice
+      - name: code-scan-veracode-pipeline-scan
+        image: docker-utilities.binrepo.cglcloud.in/cgl-dxp-veracode-scan:alpha
+        ruleset:
+          event: [push]
+          branch: [feature/*]
+        secrets: [VERACODE_USER, VERACODE_PASS]
+      - name: code-scan-veracode-policy-scan
+        image: openjdk:8
+        ruleset:
+          event: [push]
+          branch: [development, stage, production]
+        secrets: [VERACODE_USER, VERACODE_PASS]
+        commands:
+          - apt-get -qq update && apt-get -qq --assume-yes install wget zip
+          - git archive --format=zip HEAD -o ${VELA_REPO_NAME}-veracode-${VELA_BUILD_NUMBER}.zip
+          - wget https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/23.3.11.0/vosp-api-wrappers-java-23.3.11.0.jar -O veracode-api-jar.jar
+          - java -jar veracode-api-jar.jar -action uploadandscan -vid $VERACODE_USER -vkey
+            $VERACODE_PASS -appname 'MDP - COCKPIT-SNOWFLAKE-API' -filepath ${VELA_REPO_NAME}-veracode-${VELA_BUILD_NUMBER}.zip
+            -createprofile false -selectedpreviously true -version ${VELA_REPO_NAME}-${VELA_BUILD_NUMBER} -scantimeout
+            60 || true
+  build: 
+    needs: quality-and-scan
+    steps: 
+      - name: build-push-docker-dev
+        image: docker-utilities.binrepo.cglcloud.in/enablementtools/docker-plugin:3-stable
+        ruleset:
+          if:
+            branch: [development]
+            event: [push, pull_request]
+            status: [success]
+        environment:
+          ALLOWED_HOSTS: "*"
+          DEBUG: "True"
+        parameters:
+          dockerfile: ./Dockerfile
+          max_tries: 100
+          repo: cockpit-snowflake-api
+          tags: ${VELA_BUILD_COMMIT:0:7}
+          xray_full_results: true
+
+      - name: build-push-docker-stage
+        image: docker-utilities.binrepo.cglcloud.in/enablementtools/docker-plugin:3-stable
+        ruleset:
+          if:
+            branch: [stage]
+            event: [push, pull_request]
+            status: [success]
+        environment:
+          ALLOWED_HOSTS: "*"
+          DEBUG: "True"
+        parameters:
+          dockerfile: ./Dockerfile
+          max_tries: 100
+          repo: cockpit-snowflake-api
+          tags: ${VELA_BUILD_COMMIT:0:7}
+          xray_full_results: true
+        
+      - name: build-push-docker-prod
+        image: docker-utilities.binrepo.cglcloud.in/enablementtools/docker-plugin:3-stable
+        ruleset:
+          if:
+            branch: [production]
+            tag: [v*]
+            event: [tag]
+        environment:
+          ALLOWED_HOSTS: "*"
+          DEBUG: "True"
+        parameters:
+          dockerfile: ./Dockerfile
+          max_tries: 100
+          repo: cockpit-snowflake-api
+          tags: ${VELA_BUILD_COMMIT:0:7}
+          xray_full_results: true
+      
+  deploy:
+    needs: build
+    steps:
+      - name: captain-deploy-dev
+        image: docker-utilities.binrepo.cglcloud.in/captain:1-stable
+        ruleset:
+          if:
+            branch: [development]
+            event: [push]
+        parameters:
+          captain_file: .captain.yml
+          env: dev
+          run_apply: true
+          version: ${VELA_BUILD_COMMIT:0:7}  
+          
+      - name: captain-deploy-stage
+        image: docker-utilities.binrepo.cglcloud.in/captain:1-stable
+        ruleset:
+          if:
+            branch: [stage]
+            event: [push]
+        parameters:
+          captain_file: .captain-stage.yml
+          env: stage
+          run_apply: true
+          version: ${VELA_BUILD_COMMIT:0:7}
+
+      - name: captain-deploy-prod
+        image: docker-utilities.binrepo.cglcloud.in/captain:1-stable
+        ruleset:
+          if:
+            branch: [production]
+            tag: [v*]
+            event: [tag]
+        parameters:
+          captain_file: .captain-production.yml
+          env: prod
+          run_apply: true
+          version: ${VELA_BUILD_COMMIT:0:7}

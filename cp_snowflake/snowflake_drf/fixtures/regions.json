@@ -1,0 +1,16 @@
+[
+    {
+      "model": "snowflake_drf.region",
+      "pk": 1,
+      "fields": {
+        "region_name": "NA"
+      }
+    },
+    {
+      "model": "snowflake_drf.region",
+      "pk": 2,
+      "fields": {
+        "region_name": "EMEA"
+      }
+    }
+  ]
